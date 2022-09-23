@@ -8,15 +8,17 @@ QUESTIONS_FILEPATH = './questions.csv'
 
 QuestionType = Tuple[str, str]
 
+
 def load_questions_from_csv(filepath: str) -> List[QuestionType]:
     with open(filepath, 'r') as file:
         reader = csv.reader(file)
         try:
             return [(question.strip(), answer.strip()) for question, answer in reader]
         except ValueError:
-            print("Ошибка в csv файле. Каждая строка должна содержать " \
-                "данные в таком формате: <question>,<answer>", file=stderr)
+            print("Ошибка в csv файле. Каждая строка должна содержать "
+                  "данные в таком формате: <question>,<answer>", file=stderr)
             exit(1)
+
 
 def main():
     filepath = path.join(path.dirname(__file__), QUESTIONS_FILEPATH)
@@ -31,10 +33,9 @@ def main():
         else:
             print(f"Неверный ответ. Правильный ответ - {answer}.")
 
-    print("Вы дали {0} правильных ответов и {1} неправильных."
-        .format(right_answers, len(questions) - right_answers)
-    )
+    print("Вы дали {} правильных ответов и {} неправильных."
+          .format(right_answers, len(questions) - right_answers))
+
 
 if __name__ == "__main__":
     main()
-
