@@ -1,0 +1,30 @@
+#### size_of_tuples ####
+Size of tuple of length 0 is 40 bytes
+Size of tuple of length 1 is 48 bytes
+Size of tuple of length 2 is 56 bytes
+Size of tuple of length 3 is 64 bytes
+Size of tuple of length 4 is 72 bytes
+Size of tuple of length 5 is 80 bytes
+Size of tuple of length 6 is 88 bytes
+Size of tuple of length 7 is 96 bytes
+Size of tuple of length 8 is 104 bytes
+Size of tuple of length 9 is 112 bytes
+#### size_of_concated_tuples ####
+Size of the first tuple of length 3 is 64 bytes
+Size of the second tuple of length 10 is 120 bytes
+Size of them concatenated is 144
+#### size_of_concated_lists ####
+Size of the first list of length 3 is 80 bytes
+Size of the second list of length 10 is 136 bytes
+Size of them concatenated is 160
+#### size_of_concated_sets ####
+Size of the first set of length 2 is 216 bytes
+Size of the second set of length 5 is 728 bytes
+Size of them intersected is 216
+#### size_of_concated_frozensets ####
+Size of the first frozenset of length 2 is 216 bytes
+Size of the second frozenset of length 5 is 728 bytes
+Size of them intersected is 216
+#### size_of_class_instances ####
+Size of object with two fields without slots is 48 bytes
+Size of object with two fields with slots is 48 bytes
